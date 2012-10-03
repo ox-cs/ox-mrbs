@@ -93,11 +93,10 @@ if ( $user != 'anonymous' )
 }
 else
 {
-	?>Anonymous<a href="$url_SSO_login">Log in</a>
+	?>Anonymous<a href="$auth['remote_user']['login_link']">Log in</a>
 	<?php
 }
    
-
     if (isset($user_list_link))
     {
       print "<a href='$user_list_link'>" . get_vocab('user_list') . "</a>\n" ;
